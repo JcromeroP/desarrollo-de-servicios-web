@@ -1,0 +1,281 @@
+/* Estilos para mis iconos */
+.icono {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+/* Estilos para las imágenes de las secciones */
+.section-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-image {
+  width: 350px;
+  height: 350px;
+  padding: 15px;
+  border-radius: 25px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  object-fit: contain;
+}
+
+.section-image:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Colores específicos para cada sección */
+#reservas .section-image {
+  border: 4px solid rgba(13, 110, 253, 0.6);
+}
+
+#habitaciones .section-image {
+  border: 4px solid rgba(25, 135, 84, 0.6);
+}
+
+#huespedes .section-image {
+  border: 4px solid rgba(255, 193, 7, 0.6);
+}
+
+#usuarios .section-image {
+  border: 4px solid rgba(13, 202, 240, 0.6);
+}
+
+/* Realizar una animación al Nav, oculto el nav al hacer scroll y al subir aparece de nuevo */
+#navbar {
+  transition: top 0.4s ease;
+}
+
+/* Justificar texto */
+.text-justify {
+  text-align: justify;
+}
+
+/* Le doy border radius y ajusto la imagen hacia la izquierda */
+.bienvenida-img {
+  border-radius: 100%;
+  margin-left: 60px;
+  box-shadow: 100px 55px 55px black;
+}
+
+/* ===== ESTILOS RESPONSIVE ===== */
+
+/* Dispositivos móviles pequeños (menos de 576px) */
+@media (max-width: 575.98px) {
+  .section-image {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+  }
+
+  .icono {
+    font-size: 35px;
+  }
+
+  .bienvenida-img {
+    margin-left: 0;
+    margin: 0 auto;
+    display: block;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Ajustar espaciado en móviles */
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .my-5 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  /* Mejorar navegación en móviles */
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .btn-outline-warning {
+    font-size: 0.9rem;
+    padding: 0.375rem 0.75rem;
+  }
+}
+
+/* Tablets (576px - 991px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .section-image {
+    width: 300px;
+    height: 300px;
+    padding: 12px;
+  }
+
+  .bienvenida-img {
+    margin-left: 30px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Ajustar grid de beneficios en tablets */
+  .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Dispositivos medianos (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .section-image {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* Dispositivos grandes (1200px y más) */
+@media (min-width: 1200px) {
+  .section-image {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* Mejoras generales responsive */
+@media (max-width: 767.98px) {
+
+  /* Ajustar texto en móviles */
+  .text-justify {
+    text-align: left;
+  }
+
+  /* Mejorar espaciado de secciones */
+  section {
+    margin-bottom: 3rem !important;
+  }
+
+  /* Ajustar animaciones en móviles */
+  .section-image:hover {
+    transform: translateY(-3px) scale(1.02);
+  }
+
+  /* Mejorar navegación dropdown en móviles */
+  .dropdown-menu {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  .dropdown-item {
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Mejoras para pantallas muy pequeñas */
+@media (max-width: 375px) {
+  .section-image {
+    width: 200px;
+    height: 200px;
+    padding: 8px;
+  }
+
+  .icono {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
+
+/* Mejoras para orientación landscape en móviles */
+@media (max-width: 767.98px) and (orientation: landscape) {
+  .section-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .py-5 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .my-5 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+/* Mejoras para tablets en modo portrait */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .section-image {
+    width: 280px;
+    height: 280px;
+  }
+
+  .bienvenida-img {
+    margin-left: 40px;
+  }
+}
+
+/* Optimizaciones para pantallas de alta resolución */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .section-image {
+    border-width: 2px;
+  }
+
+  #reservas .section-image,
+  #habitaciones .section-image,
+  #huespedes .section-image,
+  #usuarios .section-image {
+    border-width: 3px;
+  }
+}
+
+/* Estilos generales del body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos para el footer inteligente */
+.footer-visible {
+  transform: translateY(0) !important;
+}
+
+.footer-hidden {
+  transform: translateY(100%) !important;
+}
+
+/* Asegurar que el contenido principal tenga suficiente espacio */
+main {
+  padding-bottom: 100px;
+} 

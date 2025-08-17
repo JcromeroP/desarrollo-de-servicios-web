@@ -1,0 +1,200 @@
+/* Elimina márgenes y padding por defecto */
+body, html {
+
+  width: 100%;
+
+  
+}
+
+/* ===== ESTILOS PARA COMPONENTE DE HUÉSPEDES ===== */
+.huespedes-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.huespedes-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.huespedes-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===== ESTILOS PARA COMPONENTE DE HABITACIONES ===== */
+.habitaciones-header {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.habitaciones-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.habitaciones-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===== ESTILOS PARA COMPONENTE DE USUARIOS ===== */
+.usuarios-header {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.usuarios-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.usuarios-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===== BADGES ESPECÍFICOS ===== */
+.badge-edad {
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.badge-profesion {
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.badge-piso {
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.badge-tipo {
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.badge-capacidad {
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.badge-cargo {
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.badge-usuario {
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE DESIGN PARA NUEVOS COMPONENTES ===== */
+@media (max-width: 1200px) {
+  .huespedes-header h1,
+  .habitaciones-header h1,
+  .usuarios-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .huespedes-header p,
+  .habitaciones-header p,
+  .usuarios-header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .huespedes-header,
+  .habitaciones-header,
+  .usuarios-header {
+    padding: 1.5rem;
+  }
+  
+  .huespedes-header h1,
+  .habitaciones-header h1,
+  .usuarios-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .huespedes-header,
+  .habitaciones-header,
+  .usuarios-header {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .huespedes-header h1,
+  .habitaciones-header h1,
+  .usuarios-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .huespedes-header p,
+  .habitaciones-header p,
+  .usuarios-header p {
+    font-size: 0.9rem;
+  }
+  
+  .badge-edad,
+  .badge-profesion,
+  .badge-piso,
+  .badge-tipo,
+  .badge-capacidad,
+  .badge-cargo,
+  .badge-usuario {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .huespedes-header h1,
+  .habitaciones-header h1,
+  .usuarios-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .huespedes-header p,
+  .habitaciones-header p,
+  .usuarios-header p {
+    font-size: 0.8rem;
+  }
+  
+  .stats-card .stats-number {
+    font-size: 1.8rem;
+  }
+  
+  .stats-card .stats-label {
+    font-size: 0.8rem;
+  }
+}
